@@ -14,11 +14,11 @@ function App() {
         
         <Switch>
           <Route path="/signup">
-          
+            <MyNavBar showBtn="false"/>
+            <SignUp/>
           </Route>
           <Route path="/">
-            <MyNavBar/>
-            <SignUp/>
+            <MyNavBar showBtn="true"/>
               hi
           </Route>
         </Switch>
