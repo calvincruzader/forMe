@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import MyNavBar from './components/MyNavbar';
 import SignUp from './components/Authentication/SignUp';
+import LogIn from './components/Authentication/LogIn'
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Switch} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -13,6 +14,10 @@ function App() {
       <Router>
         
         <Switch>
+          <Route path='/login'>
+            <MyNavBar/>
+            <LogIn/>
+          </Route>
           <Route path="/signup">
             <MyNavBar showBtn="false"/>
             <SignUp/>

@@ -6,7 +6,7 @@ import {FormInput} from 'shards-react';
 import {FormCheckbox} from 'shards-react';
 import {Button} from 'shards-react';
 
-import GoogleButton from 'react-google-button';
+import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 
 import '../FormContainer.css';
@@ -24,7 +24,7 @@ export default function SignUpForm() {
             <div>
                 <h1>Sign Up</h1>
             </div>
-            <GoogleButton
+            <GoogleLogin
                 onClick={() => { console.log('Google button clicked') }}
                 />
 
@@ -64,7 +64,7 @@ export default function SignUpForm() {
                 </FormGroup>
 
                 <FormCheckbox className="formGroup" checked={termsAgreement} onChange={toggleTermsAgreement}>
-                    I have read and agree to the terms and conditions
+                    I have read and agree to the Terms and Conditions and Privacy Policy
                 </FormCheckbox>
 
                 <Button className="auth-btn" theme="success">
